@@ -12,7 +12,7 @@ hardware and the Root Device Key's master password is necessary to decrypt shard
 The scheme is hardened against Quantum Computing due to the encryption algorithm for the sharded cryptographic secrets using only 
 symmetric encryption with strong key sizes and security algorithm (AES-256-CBC-PKCS7-HMAC-SHA-256).
 
-Implementation Assumptions:
+### Implementation Assumptions:
 * Smart card as the PKI device for hardware binding of the Root Device Key.
 * SCRYPT is preferred over Argon2 despite Argon2 being the winner of the PHC competition as Argon2 is rumoured to have it's algorithm upgraded to one with higher security and the fact that Argon2 is less popular than SCRYPT.
 * AES-256-CBC-PKCS7-HMAC-SHA-256 for symmetric encryption and message authentication is used due to it being the most common AES algorithm available.
