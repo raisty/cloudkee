@@ -20,7 +20,7 @@ unprotected (i.e. unwrapped for cryptographic operations), it becomes the RedRDK
 Below is a table of the BlackRDK format:
 
 | ObjectName | Length (byte) | Description                                    |
--------------------------------------------------------------------------------
+|------------|---------------|------------------------------------------------|
 | Algo       | 1             | Indicates the algorithm used in the wrapping.  |
 | IV         | 16            | Cryptographic IV.                              |
 | RDK KeyMat | 32            | Contains the keymat for the RDK key.           |
@@ -30,7 +30,7 @@ Below is a table of algorithm available for wrappingf the RDK KeyMat and also
 deriving the MAC.
 
 | AlgoName                   | ByteIndicator | Description                                                                            |
----------------------------------------------------------------------------------------------------------------------------------------
+|----------------------------|---------------|----------------------------------------------------------------------------------------|
 | Argon2-AES_CBC-HMAC_SHA256 | 0x01          | Uses Argon2 to stretch the password and AES_CBC for encryption and HMAC_SHA256 for MAC |
 
 
